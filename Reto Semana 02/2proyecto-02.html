@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reto Semana 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: -10px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(0, 8, 43);
+        }
+        .form-register {
+            width: 400px;
+            background: rgb(0, 36, 90);
+            padding: 10px;
+            margin:auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 7px;
+            font-family: 'Calibri';
+            color: white;
+            box-shadow: 7px 13px 37px #000;
+        }
+        .form-register h2 {
+            margin-bottom: 10px;
+            font-family: 'Calibri';
+            text-align: center;
+        }
+        .form-register h4 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            font-family: 'Calibri';
+            text-align: center;
+        }
+        .register {
+            width: 100%;
+            background: rgb(4, 55, 133);
+            padding: 7px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            border: 1px solid rgb(105, 150, 247);;
+            font-family: 'Calibri';
+            font-size: 18px;
+            color: white;
+        }
+        .form-register .botons {
+            width: 100%;
+            background: rgb(16, 81, 180);
+            border: none;
+            padding: 15px;
+            color: white;
+            margin: 16px 0;
+            font-size: 16px;
+        }
+        .form-register .botons:hover{
+            background: rgb(15, 107, 245);
+        }
+        .form-register .select {
+            width: 100%;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: rgb(255, 255, 255);
+            background: rgb(4, 55, 133);
+            font-family: 'Calibri';
+            text-align: center;
+        }
+        .form-register .check {
+            text-align: center;
+            font-family: 'Calibri';
+            border-radius: 5px;
+            width: 100%;
+        }
+        .form-register .gener {
+            text-align: center;
+            font-family: 'Calibri';
+            word-spacing: 45pt;
+        }
+    </style>
+</head>
+<body>
+    <section class="form-register">
+        <h2>Reto 02</h2>
+        <h4>Sing Up</h4>
+        <label>First name</label>
+        <input
+            type="nombre"
+            id="nombre"
+            class="register"
+            name="nombre"
+            required
+            minlength="3"
+            maxlength="12"
+            pattern="[A-Z a-z]+"
+        >
+        <label>Age</label>    
+        <input
+            type="number"
+            id="age"
+            class="register"
+            nombre="age"
+            required
+            min="0"
+            max="120"
+            value="18"
+        >
+        <label>Email</label>
+        <input
+            type="email"
+            id="email"
+            class="register"
+            nombre="email"
+            required
+            pattern="[A-Z a-z 0-9]{1,}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}."
+        >
+        <label>More Info</label>
+        <textarea class="register"></textarea>
+        <div class="gener">
+        <input type="radio" name="genero" value="M">Male 
+        <input type="radio" name="genero" value="F">Female
+        <input type="radio" name="genero" value="T">Trans
+        </div>
+        <br>
+        <label>Plan</label>
+        <select class="select">
+            <option selected disabled>Select Plan</option>
+            <option value="A">Plan A</option>
+            <option value="B">Plan B</option>
+            <option value="C">Plan C</option>
+            <option value="D">Plan D</option>
+            <option value="E">Plan E</option>
+        </select>
+        <div class="check">
+        <input type="checkbox" id="check" value="subscribe"> Subscribe to Newsletter
+        </div>
+        <a href="./2proyecto-03.html">
+            <input 
+            class="botons" 
+            type="submit" 
+            value="Ir al reto 3"
+            >
+        </a>
+    </section>
+</body>
+</html>
