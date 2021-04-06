@@ -42,31 +42,52 @@ h1{
     overflow: hidden;
 }
 .botones1{
-    width: 115vw;
-    height: 55vh;
-    margin-top: 100px;
-    margin-left: 550px;
-    font-size: 35px;
+    padding: 5px 5px;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 270px;
+    font-size: 15px;
     font-family: Calibri;
-    border-radius: 2em;
+    border-radius: 10px;
+}
+.botones1:hover{
+    background-color: rgb(36, 33, 33);
+}
+.botones1:active{
+    background-color: rgb(27, 27, 27);
 }
 .botones2{
-    width: 115vw;
-    height: 55vh;
-    margin-top: 100px;
-    margin-left: 550px;
-    font-size: 15vh;
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 370px;
+    font-size: 15px;
     font-family: Calibri;
-    border-radius: 2em;
+    border-radius: 10px;
+}
+.botones2:hover{
+    background-color: rgb(49, 49, 49);
+}
+.botones2:active{
+    background-color: rgb(27, 27, 27);
 }
 .botones3{
-    width: 115vw;
-    height: 55vh;
-    margin-top: 200px;
-    margin-left: 640px;
-    font-size: 35px;
+    padding: 5px 10px;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 620px;
+    font-size: 15px;
     font-family: Calibri;
-    border-radius: 2em;
+    border-radius: 10px;
+}
+.botones3:hover{
+    background-color: rgb(49, 49, 49);
+}
+.botones3:active{
+    background-color: rgb(27, 27, 27);
 }
 #page2{
     position: relative;
