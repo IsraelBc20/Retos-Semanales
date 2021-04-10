@@ -32,41 +32,55 @@
         }
         main{
             display: flex;
-            flex-direction: row;
+            padding: 20px 30px;
+            font-size: 15px;
         }
         .cuadros{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
             border: 2px solid gray;
-            padding: 100px;
             text-align: center;
+            padding: 90px;
+        }
+        img{
+            width: 60px;
+        }
+        .cuadros > img{
+            font-size: 90px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h4>Reto semana 03</h4>
-        <br>
-        <h1>BUILT WITH W3.CSS</h1>
-        <br>
-        <button>
-            LEARN W3.CSS
-        </button>
-    </header>
-    <main>
-        <div class="cuadros">
-            <h4>Responsive</h4>
-            <img href="https://carlosmoreno637.files.wordpress.com/2015/05/logo-pc.png">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ex rem voluptatem repellendus placeat minima unde dolores non blanditiis corrupti.</p>
-        </div>
-        <div class="cuadros">
-            <h4>Standard CSS</h4>
-            <img href="https://c0.klipartz.com/pngpicture/579/1022/sticker-png-css3-computer-icons-font-others-angle-rectangle-logo-css.png">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus velit sed sapiente quia obcaecati repudiandae, explicabo reprehenderit autem mollitia!</p>
-        </div>
-        <div class="cuadros">
-            <h4>Design</h4>
-            <img href="https://st2.depositphotos.com/1006689/10026/v/950/depositphotos_100264566-stock-illustration-diamond-vector-icon.jpg">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex sed saepe, delectus amet quo dolorum iure culpa fugit adipisci.</p>
-        </div>
-    </main>
+    <div class="container">
+        <header>
+            <input type="checkbox" id="btn-menu">
+            <h4>Reto semana 03</h4>
+            <br>
+            <h1>BUILT WITH W3.CSS</h1>
+            <br>
+            <button>
+                LEARN W3.CSS
+            </button>
+        </header>
+        <main class="main-container">
+            <div class="cuadros">
+                <h4>Responsive</h4>
+                <img src="https://carlosmoreno637.files.wordpress.com/2015/05/logo-pc.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ex rem voluptatem repellendus placeat minima unde dolores non blanditiis corrupti.</p>
+            </div>
+            <div class="cuadros">
+                <h4>Standard CSS</h4>
+                <img src="https://c0.klipartz.com/pngpicture/579/1022/sticker-png-css3-computer-icons-font-others-angle-rectangle-logo-css.png">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias accusamus velit sed sapiente quia obcaecati repudiandae, explicabo reprehenderit autem mollitia!</p>
+            </div>
+            <div class="cuadros">
+                <h4>Design</h4>
+                <img src="https://st2.depositphotos.com/1006689/10026/v/950/depositphotos_100264566-stock-illustration-diamond-vector-icon.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex sed saepe, delectus amet quo dolorum iure culpa fugit adipisci.</p>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
